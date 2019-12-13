@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <title>Accueil</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Barre de navigation   -->
+    <nav class="navbar navbar-light bg-light">
+        <img src="../logo.png"></img>
+        <h3 class="h3">Votre coffre-fort numérique<br>
+            et assistant administratif</h3>
+
+        <!--<form>
+            <button class="btn btn-outline-info" type="button ">
+                Connexion
+            </button>
+            <button class="btn btn-outline-info" type="button">
+                Inscription
+            </button>
+            <img src="man.png"></img>
+        </form>-->
+    </nav>
+    <div class="main">
+
+
+
+
+        <!--  <form class="input-recherch mb-3" id="search-inputs">-->
+        <!-- input   -->
+        <!-- <input type="text" id="input-search" class="form-control" placeholder="Recherche">-->
+        <!-- input   -->
+        <!--<button type="submit" id="submit-search"><i class="fa fa-search"></i></button>
+        </form>-->
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-3 col-xl-3">
+
+                    <!--button-->
+                    <div class="btn-group-vertical" bg-light>
+                        <button id="button1" class="btn btn-info">
+                            <h2>Impots<h2>
+                        </button>
+                        <button id="button1" class="btn btn-info">
+                            <h2>CAF</h2>
+                        </button>
+                        <button id="button1" class="btn btn-info text-wrap">
+                            <h2>Assurance maladie</h2>
+                        </button>
+                        <button id="button1" class="btn btn-info">
+                            <h2>Pole emploi</h2>
+                        </button>
+                        <button id="button1" class="btn btn-info">
+                            <h2>Etat civil</h2>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class=" col-6 col-xl-6">
+
+                    <div class="card-deck">
+                        <div class="container">
+                            <form class="input-recherch mb-3" id="search-inputs">
+                                <!-- input   -->
+                                <input type="text" id="input-search" class="form-control" placeholder="Recherche">
+                                <!-- input   -->
+                                <button type="submit" id="submit-search"><i class="fa fa-search"></i></button>
+                            </form>
+
+
+                            <div class="row">
+
+                                <div class="col-3 offset-8">
+
+                                    <div class="dropdown d-block">
+
+                                        <button class="btn btn-outline-info btn-tri dropdown-toggle" type="button"
+                                            id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="true" style="font-size:1.5em">
+                                            Trier par
+
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="font-size:2em">
+                                            <li><a href="#" title="Lien 1">Lien 1</a></li>
+                                            <li><a href="#" title="Lien 2">Lien 2</a></li>
+                                            <li><a href="#" title="Lien 3">Lien 3</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#" title="Lien 4">Lien 4</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <label style="font-size: 1em">
+                            <div class="card text-center">
+                                <form action="/action_page.php" class="card-head">
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck0">
+                                        <label class="custom-control-label" for="customCheck0"></label>
+                                    </div>
+                                </form>
+                                <div class="card-body">
+                                    <img src="../img/pdf.jpg" class="img-thumbnail" alt="pdf">
+                                    <!--telecharger logo-->
+                                    <!--line page--> <a href="lien page" download="w3logo" id="download">
+                                        <img src="../img/down1.jpg" alt="Télécharger" width="20" height="20">
+                                    </a>
+                                </div>
+                                <div class="card-foot">
+                                    <a href="#" class="btn btn-info btn-lg">Impots 2019</a>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label style="font-size: 1em">
+                            <div class="card text-center">
+                                <form action="/action_page.php" class="card-head">
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1"></label>
+                                    </div>
+                                </form>
+                                <div class="card-body">
+                                    <img src="../img/pdf.jpg" class="img-thumbnail" alt="pdf">
+                                    <a href="lien page" download="w3logo" id="download">
+                                        <img src="../img/down1.jpg" alt="Télécharger" width="20" height="20">
+                                    </a>
+                                </div>
+                                <div class="card-foot">
+
+                                    <a href="#" class="btn btn-info btn-lg">Impots 2019</a>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label style="font-size: 1em">
+                            <div class="card text-center">
+                                <form action="/action_page.php" class="card-head">
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                        <label class="custom-control-label" for="customCheck2"></label>
+                                    </div>
+                                </form>
+                                <div class="card-body">
+                                    <img src="../img/pdf.jpg" class="img-thumbnail" alt="pdf">
+                                    <a href="lien page" download="w3logo" id="download">
+                                        <img src="../img/down1.jpg" alt="Télécharger" width="20" height="20">
+                                    </a>
+                                </div>
+                                <div class="card-foot">
+
+                                    <a href="#" class="btn btn-info btn-lg">Impots 2019</a>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label style="font-size: 1em">
+                            <div class="card text-center">
+                                <form action="/action_page.php" class="card-head">
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                        <label class="custom-control-label" for="customCheck3"></label>
+                                    </div>
+                                </form>
+                                <div class="card-body">
+                                    <img src="../img/pdf.jpg" class="img-thumbnail" alt="pdf">
+                                    <a href="lien page" download="w3logo" id="download">
+                                        <img src="../img/down1.jpg" alt="Télécharger" width="20" height="20">
+                                    </a>
+                                </div>
+                                <div class="card-foot">
+
+                                    <a href="#" class="btn btn-info btn-lg">Impots 2019</a>
+                                </div>
+                            </div>
+                        </label>
+                        <label style="font-size: 1em">
+                            <div class="card text-center">
+                                <form action="/action_page.php" class="card-head">
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                        <label class="custom-control-label" for="customCheck4"></label>
+                                    </div>
+                                </form>
+                                <div class="card-body">
+                                    <img src="../img/pdf.jpg" class="img-thumbnail" alt="pdf">
+                                    <a href="lien page" download="w3logo" id="download">
+                                        <img src="../img/down1.jpg" alt="Télécharger" width="20" height="20">
+                                    </a>
+                                </div>
+                                <div class="card-foot">
+
+                                    <a href="#" class="btn btn-info btn-lg">Impots 2019</a>
+                                </div>
+                            </div>
+                        </label>
+                        <label style="font-size: 1em">
+                            <div class="card text-center">
+                                <form action="/action_page.php" class="card-head">
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                        <label class="custom-control-label" for="customCheck5"></label>
+                                    </div>
+                                </form>
+                                <div class="card-body">
+                                    <img src="../img/pdf.jpg" class="img-thumbnail" alt="pdf">
+                                    <a href="lien page" download="w3logo" id="download">
+                                        <img src="../img/down1.jpg" alt="Télécharger" width="20" height="20">
+                                    </a>
+                                </div>
+                                <div class="card-foot">
+
+                                    <a href="#" class="btn btn-info btn-lg">Impots 2019</a>
+                                </div>
+                            </div>
+                        </label>
+                        <label style="font-size: 1em">
+                            <div class="card text-center">
+                                <form action="/action_page.php" class="card-head">
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                        <label class="custom-control-label" for="customCheck5"></label>
+                                    </div>
+                                </form>
+                                <div class="card-body">
+                                    <img src="../img/pdf.jpg" class="img-thumbnail" alt="pdf">
+                                    <a href="lien page" download="w3logo" id="download">
+                                        <img src="../img/down1.jpg" alt="Télécharger" width="20" height="20">
+                                    </a>
+                                </div>
+                                <div class="card-foot">
+
+                                    <a href="#" class="btn btn-info btn-lg">Impots 2019</a>
+                                </div>
+                            </div>
+                        </label>
+
+                        <!--plus button-->
+                        <!--<div class="card text-center">
+
+                                <div class="card-body">
+                                    <a href="#">
+                                        <button class="glyphicon glyphicon-plus"></button>
+                                    </a>
+                                </div>
+                            </div>-->
+                        <!-- <label style="font-size: 1em">
+                            <div class="card text-center">
+                                <form action="/action_page.php" class="card-head">
+
+                                </form>
+                                <button class="card-body">
+                                    <img src="../img/plus2.jpg" class="img-thumbnail"></button>
+                                </butoon>
+
+                                <div class="card-foot">
+
+                                </div>
+                            </div>
+                        </label>-->
+                    </div>
+                </div>
+                <div class=" col-3 col-xl-3">
+                    <div class="take">
+                        <form action="/action_page.php">
+                            <div class="form-group form-group-lg">
+                                <label for="sel1" id="selection">
+                                    <img src="../img/send.jpg" class="send">
+                                    <select class="form-control" id="sel1" name="sellist1">
+
+                                        <option>Impots</option>
+                                        <option>Pole emplois</option>
+                                        <option>CAF</option>
+                                        <option>Assurance Maladie</option>
+                                        <option>Etat Civil</option>
+                                    </select>
+                                </label>
+                                <!--<div id="button5" class="btn btn-info btn_lg">Télécharger</div>-->
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top : 100px; font-size : 2em">
+            <div class="row">
+                <div class="col-3"><button type="button" class="btn-link">Basic Button</button></div>
+                <div class="col-3"><button type="button" class="btn-link">Basic Button</button></div>
+                <div class="col-3"><button type="button" class="btn-link">Basic Button</button></div>
+                <div class="col-3"><button type="button" class="btn-link">Basic Button</button></div>
+            </div>
+        </div>
+
+        <!--https://fr.scribd.com/docs
+        https://codepen.io/alvasavi/pen/QwNLKL
+        -->
+
+</body>

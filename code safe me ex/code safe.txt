@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="accueil.css" />
+    <title>Accueil</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="bloc1">
+        <img class="logo" src="img/Logo.png" alt="logo" />
+        <h2 class="baseline">
+          Votre coffre-fort numérique et<br />
+          assistant administratif
+        </h2>
+      </div>
+      <div class="boutton">
+        <button>
+          <a href="lien" type="button">Inscription </a>
+        </button>
+
+        <button>
+          <a href="lien" type="button">Connexion </a>
+        </button>
+      </div>
+    </header>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+.nav {
+  color: #4e69a2;
+}
+body {
+  padding-top: 2rem;
+}
+
+.card {
+  margin-bottom: 1rem;
+}
+#leftframe {
+   
+    display: flex;
+    flex-direction: column;
+}

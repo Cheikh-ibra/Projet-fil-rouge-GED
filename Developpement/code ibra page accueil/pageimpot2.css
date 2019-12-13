@@ -1,0 +1,94 @@
+#boo {
+  background-color: rgba(240, 255, 255, 0.397);
+}
+.logo {
+  width: 8%;
+}
+.Recherche {
+  background-color: rgb(193, 201, 209);
+  display: flex;
+  align-items: center;
+}
+.form-group {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  margin-left: 150px;
+}
+.imgme {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 250px;
+  border: 3px rgb(1, 1, 32) groove;
+  float: right;
+}
+.notf {
+  width: 10%;
+}
+.pers {
+  width: 10%;
+}
+h4 {
+  border: 3px rgb(1, 1, 32) groove;
+
+  padding: 30px;
+}
+.col-3 {
+  padding: 10px;
+  width: 50%;
+}
+.nav-link {
+  padding: 10px;
+  margin-top: 40px;
+}
+.contenu {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+#main-section {
+  margin-top: 5px;
+  padding: 5px;
+}
+.card {
+  margin-left: 50px;
+}
+h2 {
+  border: 1px rgb(1, 1, 32) groove;
+  width: 30%;
+  text-align: center;
+  margin: 400px;
+  background-color: rgb(0, 153, 255);
+  color: aliceblue;
+}
+nav {
+  margin-top: 10px;
+}
+
+#trie {
+  width: 30%;
+}
+.yeux {
+  width: 10%;
+  color: aliceblue;
+}
+.bar {
+  width: 19%;
+  float: right;
+  position: relative;
+}
+#but {
+  width: 60%;
+}
+.bt {
+  text-align: center;
+  margin-bottom: 5px;
+}
+footer {
+  border: 2px rgb(1, 1, 32) groove;
+  float: right;
+  width: 20%;
+  margin-top: 50px;
+  margin-right: 50px;
+}

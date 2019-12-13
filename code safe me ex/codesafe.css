@@ -1,0 +1,31 @@
+.logo {
+    height: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0 auto;
+    width: 100%;
+}
+
+.bloc1 {
+    display: flex;
+
+} 
+
+.baseline {
+    margin-bottom: 15px;
+}
+
+.boutton {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+button {
+    padding: 10px;
+    margin-left: 10px;
+    background-color: lightcoral;
+}

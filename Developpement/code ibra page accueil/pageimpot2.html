@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/pageimpot2.css">
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <title>Accueil</title>
+</head>
+
+<body id="boo">
+    <header>
+        <!-- Barre de navigation   -->
+        <div class=" Recherche ">
+            <img class="logo" src="logo .png"></img>
+            <h3>Votre coffre-fort numérique
+                et administratif</h3>
+            <div class="form-group">
+                <input type="search" class="input-sm form-control" placeholder="Recherche">
+                <button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-eye-open"></span>
+                    Chercher</button>
+            </div>
+            </form>
+
+            <div class="imgme">
+                <div class="yeu">
+                    <img class="yeux" src="img/yeux.svg"> Accessibilité</img>
+                </div>
+                <img class="notf" src="img/notification.svg"></img>
+                <img class="pers" src="img/person.svg"></img>
+            </div>
+        </div>
+    </header>
+    <section id="main-section">
+        <div class="bt">
+                <button  type="button" class="btn btn-success " href="#">Documents consultés récemment</button>
+                <button type="button" class="btn btn-success "href="#">Documents reçus récemment</button>
+        </div>
+        <div class="dropdown">
+
+
+            <div id="contenus" class="row border border-dark">
+                <div class="col-3 border border-dark">
+                    <h4>Tous les dossier</h4>
+                    <div class="nav flex-column  nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-Impots-tab" data-toggle="pill" href="#v-pills-Impots"
+                            role="tab" aria-controls="v-pills-Impots" aria-selected="true">Impots</a>
+                        <a class="nav-link" id="v-pills-CAF-tab" data-toggle="pill" href="#v-pills-CAF" role="tab"
+                            aria-controls="v-pills-CAF" aria-selected="false">CAF</a>
+                        <a class="nav-link" id="v-pills-CPAM-tab" data-toggle="pill" href="#v-pills-CPAM" role="tab"
+                            aria-controls="v-pills-CPAM" aria-selected="false">CPAM</a>
+                        <a class="nav-link" id="v-pills-Pole_Emploi-tab" data-toggle="pill" href="#v-pills-Pole_Emploi"
+                            role="tab" aria-controls="v-pills-Pole_Emploi" aria-selected="false">Pole Emploi</a>
+                        <a class="nav-link" id="v-pills-Livret_de_famille-tab" data-toggle="pill"
+                            href="#v-pills-Livret_de_famille" role="tab" aria-controls="v-pills-Livret_de_famille"
+                            aria-selected="false">Livret de famille</a>
+                        <a class="nav-link" id="v-pills-Acte_de_naissance-tab" data-toggle="pill"
+                            href="#v-pills-Acte_de_naissance" role="tab" aria-controls="v-pills-Acte_de_naissance"
+                            aria-selected="false">Acte de naissance</a>
+                    </div>
+                </div>
+
+                <div class="col-6 tab-content" id="v-pills-tabContent">
+
+                    <div id="trie" class=" input-group  ">
+                        <div class="input-group-prepend">
+                            <button type="button" class="btn btn-outline-secondary">Trier par </button>
+                            <button type="button"
+                                class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Date</a>
+                                <a class="dropdown-item" href="#">Nom</a>
+                                <a class="dropdown-item" href="#">taille</a>
+                                <div role="separator" class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+                    </div>
+
+                    <div class="tab-pane fade show active" id="v-pills-Impots" role="tabpanel"
+                        aria-labelledby="v-pills-Impots-tab">
+                        <h2>Impots</h2>
+                        <section class="contenu">
+                            <div class="card mb-4" style="width: 12rem;">
+                                <img src="img/pdf.svg" class="card-img-top" style="width: 100%;">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                    data-target="#e1xampleModalLong">
+                                    Ficher
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="e1xampleModalLong" tabindex="-1" role="dialog"
+                                    aria-labelledby="e1xampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="e1xampleModalLongTitle">Modal title</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                hgd
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-4" style="width: 12rem;">
+                                    <img src="img/pdf.svg" class="card-img-top" style="width: 100%;">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                        data-target="#e2xampleModalLong">
+                                        Ficher
+                                    </button>
+    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="e2xampleModalLong" tabindex="-1" role="dialog"
+                                        aria-labelledby="e2xampleModalLongTitle" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="e2xampleModalLongTitle">Modal title</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    ...2
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-4" style="width: 12rem;">
+                                        <img src="img/pdf.svg" class="card-img-top" style="width: 100%;">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                            data-target="#e3xampleModalLong">
+                                            Ficher
+                                        </button>
+        
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="e3xampleModalLong" tabindex="-1" role="dialog"
+                                            aria-labelledby="e3xampleModalLongTitle" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="e3xampleModalLongTitle">Modal title</h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        ...3
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-4" style="width: 12rem;">
+                                            <img src="img/pdf.svg" class="card-img-top" style="width: 100%;">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                                data-target="#e4xampleModalLong">
+                                                Ficher
+                                            </button>
+            
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="e4xampleModalLong" tabindex="-1" role="dialog"
+                                                aria-labelledby="e4xampleModalLongTitle" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="e4xampleModalLongTitle">Modal title</h5>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            ...4
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-4" style="width: 12rem;">
+                                                <img src="img/pdf.svg" class="card-img-top" style="width: 100%;">
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                                    data-target="#e5xampleModalLong">
+                                                    Ficher
+                                                </button>
+                
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="e5xampleModalLong" tabindex="-1" role="dialog"
+                                                    aria-labelledby="e5xampleModalLongTitle" aria-hidden="true">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="e5xampleModalLongTitle">Modal title</h5>
+                                                                <button type="button" class="close" data-dismiss="modal"
+                                                                    aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                ...5
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary"
+                                                                    data-dismiss="modal">Close</button>
+                                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-4" style="width: 12rem;">
+                                                    <img src="img/pdf.svg" class="card-img-top" style="width: 100%;">
+                                                    <!-- Button trigger modal -->
+                                                    <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                                        data-target="#e6xampleModalLong">
+                                                        Ficher
+                                                    </button>
+                    
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="e6xampleModalLong" tabindex="-1" role="dialog"
+                                                        aria-labelledby="e6xampleModalLongTitle" aria-hidden="true">
+                                                        <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="e6xampleModalLongTitle">Modal title</h5>
+                                                                    <button type="button" class="close" data-dismiss="modal"
+                                                                        aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    ...6
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary"
+                                                                        data-dismiss="modal">Close</button>
+                                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                        </section>
+                    </div>
+
+
+
+                    <div class="tab-pane fade" id="v-pills-CAF" role="tabpanel" aria-labelledby="v-pills-CAF-tab">
+                        <h2>CAF</h2>
+                        <section class="contenu">
+                            <div class="card" style="width: 12rem;">
+                                <img src="img/pdf.svg" class="card-img-top" style="width: 100%;">
+                                <button>Ficher 2</button>
+                            </div>
+                            <div class="card" style="width: 12rem;">
+                                <img src="img/pdf.svg" class="card-img-top" style="width: 100%;">
+                                <button>Ficher 3</button>
+                            </div>
+                            <div class="card" style="width: 12rem;">
+                                <img src="img/pdf.svg" class="card-img-top" style="width: 100%;">
+                                <button>Ficher</button>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-CPAM" role="tabpanel" aria-labelledby="v-pills-CPAM-tab">
+                        <h2>CPAM</h2>
+                        <section class="contenu">
+                            <div class="card" style="width: 12rem;">
+                                <img src="img/pdf.svg" class="card-img-top" style="width: 100%;">
+                                <button>Ficher</button>
+                            </div>
+                            <div class="card" style="width: 12rem;">
+                                <img src="img/pdf.svg" class="card-img-top" style="width: 100%;">
+                                <button>Ficher</button>
+                            </div>
+                            <div class="card" style="width: 12rem;">
+                                <img src="img/pdf.svg" class="card-img-top" style="width: 100%;">
+                                <button>Ficher</button>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-Pole_Emploi" role="tabpanel"
+                        aria-labelledby="v-pills-Pole_Emploi-tab">
+                        <h2>Pole Emploi</h2>
+                        <section class="contenu">
+
+                            <div class="card" style="width: 12rem;">
+                                <img src="img/pdf.svg" class="card-img-top" style="width: 100%;">
+                                <button>Ficher</button>
+                            </div>
+
+                            <div class="card" style="width: 12rem;">
+                                <img src="img/pdf.svg" class="card-img-top" style="width: 100%;">
+                                <button>Ficher</button>
+                            </div>
+                            <div class="card" style="width: 12rem;">
+                                <img src="img/pdf.svg" class="card-img-top" style="width: 100%;">
+                                <button>Ficher</button>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-Livret_de_famille" role="tabpanel"
+                        aria-labelledby="v-pills-Livret_de_famille-tab">
+                        <h2>Livret de famille</h2>
+                        <section class="contenu">
+                            <div class="card" style="width: 12rem;">
+                                <img src="img/pdf.svg" class="card-img-top" style="width: 100%;">
+                                <button>Ficher</button>
+                            </div>
+                            <div class="card" style="width: 12rem;">
+                                <img src="img/pdf.svg" class="card-img-top" style="width: 100%;">
+                                <button>Ficher</button>
+                            </div>
+                            <div class="card" style="width: 12rem;">
+                                <img src="img/pdf.svg" class="card-img-top" style="width: 100%;">
+                                <button>Ficher</button>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-Acte_de_naissance" role="tabpanel"
+                        aria-labelledby="v-pills-Acte_de_naissance-tab">
+                        <h2>Acte de naissance</h2>
+                        <section class="contenu">
+                            <div class="card" style="width: 12rem;">
+                                <img src="img/pdf.svg" class="card-img-top" style="width: 100%;">
+                                <button>Ficher</button>
+                            </div>
+                            <div class="card" style="width: 12rem;">
+                                <img src="img/pdf.svg" class="card-img-top" style="width: 100%;">
+                                <button>Ficher</button>
+                            </div>
+                            <div class="card" style="width: 12rem;">
+                                <img src="img/pdf.svg" class="card-img-top" style="width: 100%;">
+                                <button>Ficher</button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="col-3 bar border border-dark">
+                               
+                                <button id="but" class="btn btn-primary ml-3 " type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                  Profil
+                                  <img src="img/profil.svg" class="card-img-top" style="width: 15%;">
+                                </button>
+                              <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                        <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">Nom:</li>
+                                                <li class="list-group-item">Prenom:</li>
+                                                <li class="list-group-item"> id: </li>
+                                                <li class="list-group-item">Téléphone:</li>
+                                                <li class="list-group-item">Adress:</li>
+                                              </ul>
+                                              <script>
+                                                  
+                                              </script>
+                                                
+                                </div>
+                              </div>
+                    <!-- Button trigger modal -->
+                    
+                    <button id="but" class="btn btn-primary ml-3 mt-2 " type="button" data-toggle="collapse" data-target="#collapsepara" aria-expanded="false" aria-controls="collapsepara">
+                            Paramétres
+                            <img src="img/profil.svg" class="card-img-top" style="width: 15%;">
+                          </button>
+                        <div class="collapse" id="collapsepara">
+                          <div class="card card-body">
+                                          <p>
+                                              Nom: <br>
+                                              Prenom: <br>
+                                              
+                                          </p>
+                      
+                          </div>
+                        </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary ml-3 mt-2" data-toggle="modal" data-target="#exampleModal">
+                        Déconnection
+                        <img src="img/power.svg" class="card-img-top" style="width: 15%;">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Déconnection</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="but" type="button" class="btn btn-secondary btn-lg mb-3 mt-5 ml-3">Télécharger
+                            <img src="img/save.svg" class="card-img-top" style="width: 10%;">
+                        </button>
+                        <button id="but" type="button" class="btn btn-secondary btn-lg mb-3 mt-5 ml-3">Tranférer
+                            <img src="img/send.svg" class="card-img-top" style="width: 10%;">
+                    </div>
+                </div>
+
+            </div>
+
+
+    </section>
+<footer>
+<!-- Default dropup button -->
+<div class="btn-group dropup ">
+        <button type="button" class="btn btn-dark dropdown-toggle ml-3 mt-3 mb-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Politique et confidentialité
+        </button>
+        <div class="dropdown-menu">
+          <!-- Dropdown menu links -->54lj
+        </div>
+      </div>
+      
+      <!-- Split dropup button -->
+      <div class="btn-group dropup">
+        <button type="button" class="btn btn-dark">
+          Aide
+        </button>
+        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+          <!-- Dropdown menu links -->hee
+        </div>
+      </div>
+</footer>
+</body>
+
+</html>
